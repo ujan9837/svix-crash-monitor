@@ -1,0 +1,10 @@
+[project]
+name = "SVIX Crash Monitor (history)"
+description = "The daily history of Ian Martin's SVIX index and the option-implied probabilities of a 10% and a 20% fall in the S&P 500, from E-mini S&P 500 option settlements."
+
+[dataframes.svix_monitor_history]
+name = "SVIX Monitor History"
+description = "One row per E-mini session, oldest first: the 30-day SVIX, the Cboe VIX, and the risk-neutral, log-utility, and power-utility probabilities of a 10% and a 20% drop."
+path = "svix_monitor_history.csv"
+date_col = "date"
+docs = "One row per session, recorded by the daily workflow. Derived quantities only; no settlement prices."
